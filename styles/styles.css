@@ -18,36 +18,25 @@ Table of Contents:
         Seashell fdefec =       	hsl(11, 81%, 96%)
 ////////////////////////*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Dosis', sans-serif;
+    background-color: hsl(31, 90%, 76%);
+    color: hsl(9, 85%, 8%);
     font-weight: 400;
 }
 
-/*
-Achtergrondkleur telefoons
- */
-@media screen and (min-width: 0px) {
-    body {
-    background-color: hsl(31, 90%, 76%);
-    }
-}
-
-/*
-Achtergrondkleur tablet
- */
-@media screen and (min-width: 768px) {
-    body {
-        background-color: hsl(23, 90%, 64%);
-    }
-}
-
-/*
-Achtergrondkleur desktop
- */
-@media screen and (min-width: 992px) {
-    body {
-        background-color: hsl(15, 87%, 60%);
-    }
+img {
+    width: 100%;
 }
 
 
@@ -55,15 +44,46 @@ Achtergrondkleur desktop
     2. Typography
 ////////////////////////*/
 
+h2 {
+    margin: 0 0 0.5rem 0;
+}
 
+p {
+    margin: .75rem 0
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
-
+.section {
+    background-color: hsl(11, 81%, 96%);
+    box-shadow: 0 .5rem 0.75rem rgba(0, 0, 0
+    , 0.1%);
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+}
 
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+
+@media screen and (min-width: 768px) {
+    /* Voor tablets */
+    html {
+        font-size: 18px;
+    }
+    body {
+        background-color: hsl(23, 90%, 64%);
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    /* Voor desktops */
+    body {
+        background-color: hsl(15, 87%, 60%);
+    }
+}
