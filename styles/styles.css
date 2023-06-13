@@ -6,16 +6,50 @@ Table of Contents:
     2. Typografie
     3. Areas
     4. Media Queries
+
 ////////////////////////////////////////////////////////////////////////*/
 
 /*////////////////////////
     1. Global Styles
+        Peach (f9c48b) =            hsl(31, 90%, 76%)
+        Atomic tangerine f69051 =   hsl(23, 90%, 64%)
+        Burnt sienna f26d40 =   	hsl(15, 87%, 60%)
+        Black bean 260803 = 	    hsl(9, 85%, 8%)
+        Seashell fdefec =       	hsl(11, 81%, 96%)
 ////////////////////////*/
 
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
+
+/*
+Achtergrondkleur telefoons
+ */
+@media screen and (min-width: 0px) {
+    body {
+    background-color: hsl(31, 90%, 76%);
+    }
+}
+
+/*
+Achtergrondkleur tablet
+ */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: hsl(23, 90%, 64%);
+    }
+}
+
+/*
+Achtergrondkleur desktop
+ */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: hsl(15, 87%, 60%);
+    }
+}
+
 
 /*////////////////////////
     2. Typography
